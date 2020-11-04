@@ -57,6 +57,5 @@ def profile():
 
 if __name__ == "__main__":
    os.environ["FLASK_ENV"] = "development"
-   #Disable https for local host for development
    os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
    app.run(debug=True)
