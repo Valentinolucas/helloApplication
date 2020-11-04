@@ -33,9 +33,6 @@ def login():
 
 @app.route("/callback", methods=["GET"])
 def callback():
-   print(request.url)
-   print(access_token_url)
-   print(client_secret)
    nhsd = OAuth2Session(client_id=client_id, redirect_uri=redirect_uri, state = session["oauth_state"])
    token = nhsd.fetch_token(
        token_url=access_token_url,
