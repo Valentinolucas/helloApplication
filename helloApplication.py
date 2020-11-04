@@ -17,9 +17,9 @@ access_token_url = "https://sandbox.api.service.nhs.uk/oauth2/token"
 redirect_uri = "http://localhost:5000/callback"
 
 # replace with your api key
-client_id = "a04hMyOnvcayDA0r24N0gr6meEXRktjZ"
+client_id = "API_KEY"
 # replace with your secret
-client_secret = "hDm6P7KX261X0u3X"
+client_secret = "SECRET_KEY"
 
 @app.route("/")
 @app.route("/login")
